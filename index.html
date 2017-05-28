@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gold Digger The Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+<header id="header_top">
+
+    <div class="col_m4">
+        <button class="btn" id="btnStart">Start</button>
+        <button class="btn" id="btnPause">Pauze</button>
+        <button class="btn" id="btnStop">Stop</button>
+        <button class="btn" id="btnMute"> 
+        <div class='unmute' onclick="document.getElementById('track').muted = !document.getElementById('track').muted; $(this).toggleClass('mute')"></div>
+        </button>
+
+    </div>
+</header>
+        
+
+<main>
+    
+
+    <div id="hiddenImages">
+        <!--TOEVOEGEN AAN DE DOM -->
+        <img id="imgSugarDaddy" src="img/daddy.png" height="310" width="200" alt="sugardaddy"/>
+        <img id="imgDigger" src="img/gold_digger.png" height="390" width="576" alt="digger" />
+        <img id="imgCash" src="img/money.png" height="444" width="640" alt="cash" />
+        <img id="imgCar" src="img/auto.png" height="322" width="560" alt="car" />
+    </div>
+    
+    <div id="City">
+        <div class="logo">
+        </div>
+
+        <div id="score">
+            <h4 id="score_style"><span id="scoreValue">0</span><span id="hiScore"></span>$<img id="money_img" src="Img/money.png" height="44" width="64" alt="money"></h4>
+        </div>
+
+    
+        <canvas id="playground" width="700" height="600"></canvas>
+</div>
+        <section id="content_website">
+                <h4 id="lives_style"><span id="livesValue">0</span>$ : Dropped Money Donated To The Homeless</h4>
+
+                <article>
+                    <header>
+                        <h2>Gold digger the game</h2>
+                    </header>
+
+                    
+                    <p>
+                        Grab the money your sugar daddy trows down <br>
+                        and save up for that designer purse you really need !<br>
+                        If you can't catch the money it falls on the street<br>
+                        and is automaticly donated to the homeless.
+                    </p>
+                    
+                    
+                    <footer>
+                    <br>
+                    <p id="credits">royalty free effects &amp; music / made by
+                     maxim pattijn<p>
+                    </footer>
+                </article>
+        </section>
+
+
+</main>
+
+
+<footer>
+
+        <div class="audio">
+            <audio  class="hidden" id="audioTag" controls>
+                 <source src="sound/ka ching Sound Effect.mp3" type="audio/ogg">
+            </audio>
+
+            <audio  class="hidden" id="audioTag2" controls loop>
+                <source src="sound/Money Money Money! - Sound Effect.mp3" type="audio/ogg">
+                Your browser does not support the audio tag.
+            </audio>
+
+            <audio id="track" autoplay="autoplay" loop="loop">
+                <source src="sound/Money Money Money! - Sound Effect.mp3" type="audio/ogg" />
+            </audio> 
+        </div>
+    
+    
+
+</footer>
+    
+    <!-- javascript sources -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.7.11/fabric.min.js"></script>
+    <script type="text/javascript" src="js/elements.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

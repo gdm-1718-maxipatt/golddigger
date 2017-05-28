@@ -1,0 +1,157 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url('../Img/City_Background_Ny_Night_4267x2133.png') no-repeat center  ;
+    background-size: 180%;
+    
+    color: #000000;
+    text-align: center;
+    display: flex;
+    justify-content :center;
+    flex-direction : column;
+    align-items : center;
+}
+
+
+.btn {
+    background-color: black;
+}
+
+#score{
+    font-family: arial;
+    height: 44px;
+    width: 700px;
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    padding-right: 20px; 
+    color: white;
+
+}
+
+#score_style {
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    align-items:center;
+
+    
+}
+
+#lives_style{
+    font-size: 30px;
+    color: white;
+}
+
+
+#credits {
+    color: #e57390;
+}
+
+#title_style{
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+}
+
+#content_website{
+    display: flex;
+    justify-content :center;
+    flex-direction : column;
+    
+    height: 330px;
+    background-color: #521e2e;
+    font-family: "Roboto", sans-serif;
+    color: #e57390;
+    width: 700px;
+}
+
+#content_website h2 {
+    color: white; 
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ffad33;
+}
+#City {
+    width: 700px;
+    height: 600px;
+
+    margin: 0 auto;
+
+    background: url('../Img/City_Background_Ny_Night_4267x2133.png') no-repeat  center ;
+    background-size : 173%;
+  
+    
+    border: 5px solid #521e2e;
+    position: relative;
+}
+
+#City .logo {
+    position: absolute;
+    margin-left: 550px;
+    top: -100px;
+    
+    background: url('../img/logo_game.png') no-repeat right top;
+    background-size: contain;
+    width: 250px;
+    height: 250px;
+}
+
+#hiddenImages {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.01;
+}
+
+.hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0.01;
+}
+
+.btn:hover { background-color: #28277e;}
+
+.btn{ margin-left: 20px;
+background-color: #521e2e;
+}
+
+.btn, .btn-large {
+    background-color:none ;
+}
+
+
+.col_m4{display: flex;
+justify-content :center;
+margin-left: -250px;
+margin-bottom: 20px;
+
+}
+
+#header_top{
+    margin-top: 50px;
+}
+
+
+.unmute{    background-image: url(http://franriavilla.in/images/unmute.png);
+            background-size: 100%;
+            width:35px;
+            height:30px;
+            cursor: pointer;
+        }
+
+        .mute{
+            background-image: url(http://franriavilla.in/images/mute.png);
+             background-size: 100%;
+            width:35px;
+            height:30px;
+            cursor: pointer;
+        }
